@@ -15,23 +15,14 @@ function getSearchTerm() {
   return getUserArguments().slice(1).join('+');
 }
 
-
-
 function searchType(searchType, searchTerm) {
-  if (!searchType) {
-    doWhatItSays();
-  }
-  if (searchType === 'spotify-this-song') {
-    spotifyThisSong(searchTerm);
-  } else if (searchType === "concert-this") {
-    concertThis(searchTerm);
-  } else if (searchType === "movie-this") {
-    movieThis(searchTerm);
-  } else {
-    doWhatItSays();
+  switch(searchType) {
+    case 'spotify-this-song': spotifyThisSong(searchTerm);
+    case "concert-this": concertThis(searchTerm);
+    case "movie-this": movieThis(searchTerm);
+    case "do-what-it-says": doWhatItSays();
   }
 }
-
 
 function movieThis(movie) {
   if (!movie) {
@@ -40,7 +31,7 @@ function movieThis(movie) {
   // Use axios to search OMDB for film info
   axios.get("http://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy").then(
     function (response) {
-      // Then we print out the imdbRating
+      // Then print out the results
       var title = "Film Title: " + response.data.Title;
       var year = "Year Released: " + response.data.Year;
       var imdb = "IMDB Rating: " + response.data.imdbRating;
@@ -67,7 +58,6 @@ function concertThis(artist) {
     .then(
       function (response) {
         var path = response.data[0];
-
         var group = path.lineup;
         var venue = path.venue.name;
         var location = path.venue.city + ", " + path.venue.country;
@@ -83,17 +73,18 @@ function concertThis(artist) {
 };
 // do-what-it-says
 function doWhatItSays() {
-  fs.readFile('./random.txt', (err, data) => {
+  fs.readFile('./random.txt', 'utf8', function(err, data) {
     if (err) throw err;
-    var str = data;
-    var song = getSongTitle(data)
-
-    function getSongTitle(str) {
-      return str.slice(1);
+    var action = getAction(data);
+    function getAction(data){
+      return data.split(",").slice(0, 1) ;
     }
-    console.log(song);
-
+    var song = getSong(data);
+    function getSong(data) {
+      return data.split(",").slice(1);
+    }
     spotifyThisSong(song);
+    // searchType(action, song);
   });
 };
 
