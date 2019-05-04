@@ -16,11 +16,18 @@ function getSearchTerm() {
 }
 
 function searchType(searchType, searchTerm) {
-  switch(searchType) {
-    case 'spotify-this-song': spotifyThisSong(searchTerm);
-    case "concert-this": concertThis(searchTerm);
-    case "movie-this": movieThis(searchTerm);
-    case "do-what-it-says": doWhatItSays();
+  switch (searchType) {
+    case 'spotify-this-song':
+      spotifyThisSong(searchTerm);
+      break;
+    case "concert-this":
+      concertThis(searchTerm);
+      break;
+    case "movie-this":
+      movieThis(searchTerm);
+      break;
+    default:
+      doWhatItSays();
   }
 }
 
@@ -46,12 +53,12 @@ function movieThis(movie) {
 
     }
   );
-}
+};
 
 // concert-this
 
 function concertThis(artist) {
-  if (!artist){
+  if (!artist) {
     artist = "Adam Lambert";
   }
   axios.get("https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp")
@@ -68,18 +75,21 @@ function concertThis(artist) {
         logData(output);
 
       }).catch(function (err) {
-        console.log(err);
-      });
+      console.log(err);
+    });
 };
+
 // do-what-it-says
 function doWhatItSays() {
-  fs.readFile('./random.txt', 'utf8', function(err, data) {
+  fs.readFile('./random.txt', 'utf8', function (err, data) {
     if (err) throw err;
     var action = getAction(data);
-    function getAction(data){
-      return data.split(",").slice(0, 1) ;
+
+    function getAction(data) {
+      return data.split(",").slice(0, 1);
     }
     var song = getSong(data);
+
     function getSong(data) {
       return data.split(",").slice(1);
     }
@@ -92,7 +102,7 @@ function spotifyThisSong(songTitle) {
   var Spotify = require('node-spotify-api');
   var keys = require("./keys.js");
   var spotify = new Spotify(keys.spotify);
-  if (!songTitle){
+  if (!songTitle) {
     songTitle = "The Sign Ace of Base";
   }
   spotify.search({
@@ -106,7 +116,7 @@ function spotifyThisSong(songTitle) {
       var song = path.name;
       var link = path.preview_url;
       var album = path.album.name;
-      var output = "Artist: "+artist + "\nSong: " + song + "\nPreview: " + link + "\nAlbum: " + album;
+      var output = "Artist: " + artist + "\nSong: " + song + "\nPreview: " + link + "\nAlbum: " + album;
       console.log(output);
       logData(output);
     })
@@ -115,11 +125,11 @@ function spotifyThisSong(songTitle) {
     });
 }
 
-function logData(data){
-  fs.appendFile('log.txt', data+"\n", function (err) {
+function logData(data) {
+  fs.appendFile('log.txt', data + "\n", function (err) {
     if (err) throw err;
     console.log('Saved!');
   });
 }
 searchType(getSearchType(), getSearchTerm());
-logData("\nRequest: "+process.argv.slice(2));
+logData("\nRequest: " + process.argv.slice(2));

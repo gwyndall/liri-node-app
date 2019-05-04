@@ -21,44 +21,20 @@ Venue: LADY GAGA ENIGMA
 Locale: Las Vegas, United States
 Date: 05/30/2019
 
-Request: do-what-it-says
+Request: 
+Artist: Backstreet Boys
+Song: I Want It That Way
+Preview: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=b9d7e1e734384fe1a83a2e873661e932
+Album: The Hits--Chapter One
+
+Request: spotify-this
+Artist: Backstreet Boys
+Song: I Want It That Way
+Preview: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=b9d7e1e734384fe1a83a2e873661e932
+Album: The Hits--Chapter One
+
+Request: spotify-this-song
 Artist: Ace of Base
 Song: The Sign
 Preview: https://p.scdn.co/mp3-preview/4c463359f67dd3546db7294d236dd0ae991882ff?cid=b9d7e1e734384fe1a83a2e873661e932
 Album: The Sign (US Album) [Remastered]
-
-
-Request: movie-this,Nightmare,on,Elm,Street
-Film Title: A Nightmare on Elm Street
-Year Released: 1984
-IMDB Rating: 7.5
-Rotten Tomatoes Rating: 76
-Country: USA
-Language: English
-Plot: The monstrous spirit of a slain janitor seeks revenge by invading the dreams of teenagers whose parents were responsible for his untimely death.
-Cast: John Saxon, Ronee Blakley, Heather Langenkamp, Amanda Wyss
-
-Request: do-what-it-says
-Artist: Backstreet Boys
-Song: I Want It That Way
-Preview: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=b9d7e1e734384fe1a83a2e873661e932
-Album: The Hits--Chapter One
-
-
-Request: do-what-it-says
-
-Request: do-what-it-says
-
-Request: do-what-it-says
-
-Request: do-what-it-says
-
-Request: do-what-it-says
-
-Request: do-what-it-says
-
-Request: do-what-it-says
-Artist: Backstreet Boys
-Song: I Want It That Way
-Preview: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=b9d7e1e734384fe1a83a2e873661e932
-Album: The Hits--Chapter One
