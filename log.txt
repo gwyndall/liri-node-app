@@ -15,12 +15,6 @@ Language: English, Swedish, Italian
 Plot: A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.
 Cast: Leonardo DiCaprio, Kate Winslet, Billy Zane, Kathy Bates
 
-Request: concert-this,lady,gaga
-Artist: Lady Gaga
-Venue: LADY GAGA ENIGMA
-Locale: Las Vegas, United States
-Date: 05/30/2019
-
 Request: 
 Artist: Backstreet Boys
 Song: I Want It That Way
@@ -38,3 +32,201 @@ Artist: Ace of Base
 Song: The Sign
 Preview: https://p.scdn.co/mp3-preview/4c463359f67dd3546db7294d236dd0ae991882ff?cid=b9d7e1e734384fe1a83a2e873661e932
 Album: The Sign (US Album) [Remastered]
+
+Request: spotify-this-song,Bohemian,Rhapsody
+Artist: Queen
+Song: Bohemian Rhapsody - Remastered 2011
+Preview: null
+Album: A Night At The Opera (Deluxe Remastered Version)
+
+Request: concert-this,Adam,Lambert
+Artist: Adam Lambert
+Venue: Rogers Arena
+Locale: Vancouver, Canada
+Date: 07/10/2019
+-----
+Artist: Adam Lambert
+Venue: Tacoma Dome
+Locale: Tacoma, United States
+Date: 07/12/2019
+-----
+Artist: Adam Lambert
+Venue: SAP Center
+Locale: San Jose, United States
+Date: 07/14/2019
+-----
+Artist: Adam Lambert
+Venue: Talking Stick Resort Arena
+Locale: Phoenix, United States
+Date: 07/16/2019
+-----
+Artist: Adam Lambert
+Venue: The Forum
+Locale: Los Angeles, United States
+Date: 07/19/2019
+-----
+Artist: Adam Lambert
+Venue: The Forum
+Locale: Los Angeles, United States
+Date: 07/20/2019
+-----
+Artist: Adam Lambert
+Venue: American Airlines Center
+Locale: Dallas, United States
+Date: 07/23/2019
+-----
+Artist: Adam Lambert
+Venue: Toyota Center
+Locale: Houston, United States
+Date: 07/24/2019
+-----
+Artist: Adam Lambert
+Venue: Little Caesars Arena
+Locale: Detroit, United States
+Date: 07/27/2019
+-----
+Artist: Adam Lambert
+Venue: Scotiabank Theatre
+Locale: Toronto, Canada
+Date: 07/28/2019
+-----
+Artist: Adam Lambert
+Venue: Capital One Arena
+Locale: Washington, United States
+Date: 07/30/2019
+-----
+Artist: Adam Lambert
+Venue: PPG Paints Arena
+Locale: Pittsburgh, United States
+Date: 07/31/2019
+-----
+Artist: Adam Lambert
+Venue: Wells Fargo Center
+Locale: Philadelphia, United States
+Date: 08/03/2019
+-----
+Artist: Adam Lambert
+Venue: Xfinity Center
+Locale: Boston, United States
+Date: 08/04/2019
+-----
+Artist: Adam Lambert
+Venue: Madison Square Garden
+Locale: New York, United States
+Date: 08/06/2019
+-----
+Artist: Adam Lambert
+Venue: Madison Square Garden
+Locale: New York, United States
+Date: 08/07/2019
+-----
+Artist: Adam Lambert
+Venue: United Center
+Locale: Chicago, United States
+Date: 08/09/2019
+-----
+Artist: Adam Lambert
+Venue: Xcel Energy Center
+Locale: St Paul, United States
+Date: 08/10/2019
+-----
+Artist: Adam Lambert
+Venue: Nationwide Arena
+Locale: Columbus, United States
+Date: 08/13/2019
+-----
+Artist: Adam Lambert
+Venue: Bridgestone Arena
+Locale: Nashville, United States
+Date: 08/15/2019
+-----
+Artist: Adam Lambert
+Venue: BB&T Center
+Locale: Fort Lauderdale, United States
+Date: 08/17/2019
+-----
+Artist: Adam Lambert
+Venue: Amalie Arena
+Locale: Tampa, United States
+Date: 08/18/2019
+-----
+Artist: Adam Lambert
+Venue: Smoothie King Center
+Locale: New Orleans, United States
+Date: 08/20/2019
+-----
+Artist: Adam Lambert
+Venue: State Farm Arena
+Locale: Atlanta, United States
+Date: 08/22/2019
+-----
+Artist: Adam Lambert
+Venue: Spectrum Center
+Locale: Charlotte, United States
+Date: 08/23/2019
+-----
+Artist: Adam Lambert
+Venue: Saitama Super Arena
+Locale: Saitama, Japan
+Date: 01/25/2020
+-----
+Artist: Adam Lambert
+Venue: Saitama Super Arena
+Locale: Saitama, Japan
+Date: 01/26/2020
+-----
+Artist: Adam Lambert
+Venue: Kyocera Dome Osaka
+Locale: Osaka, Japan
+Date: 01/28/2020
+-----
+Artist: Adam Lambert
+Venue: Nagoya Dome
+Locale: Nagoya, Japan
+Date: 01/30/2020
+-----
+Artist: Adam Lambert
+Venue: Westpac Stadium
+Locale: Wellington, New Zealand
+Date: 02/05/2020
+-----
+Artist: Adam Lambert
+Venue: Mt Smart Stadium
+Locale: Auckland, New Zealand
+Date: 02/07/2020
+-----
+Artist: Adam Lambert
+Venue: Forsyth Barr Stadium
+Locale: Dunedin, New Zealand
+Date: 02/10/2020
+-----
+Artist: Adam Lambert
+Venue: Suncorp Bank Brisbane Square
+Locale: Brisbane City, Australia
+Date: 02/13/2020
+-----
+Artist: Adam Lambert
+Venue: ANZ Stadium
+Locale: Sydney Olympic Park, Australia
+Date: 02/15/2020
+-----
+Artist: Adam Lambert
+Venue: AAMI Park
+Locale: Melbourne, Australia
+Date: 02/19/2020
+-----
+Artist: Adam Lambert
+Venue: Optus Stadium
+Locale: Burswood, Australia
+Date: 02/23/2020
+-----
+Artist: Adam Lambert
+Venue: Adelaide Oval
+Locale: North Adelaide, Australia
+Date: 02/26/2020
+-----
+Artist: Adam Lambert
+Venue: Metricon Stadium
+Locale: Carrara, Australia
+Date: 02/29/2020
+-----

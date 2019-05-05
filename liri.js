@@ -63,21 +63,28 @@ function concertThis(artist) {
   }
   axios.get("https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp")
     .then(
-      function (response) {
-        var path = response.data[0];
-        var group = path.lineup;
-        var venue = path.venue.name;
-        var location = path.venue.city + ", " + path.venue.country;
-        // * Date of the Event (use moment to format this as "MM/DD/YYYY")
-        var date = moment(path.datetime).format("MM/DD/YYYY");
-        var output = "Artist: " + group + "\nVenue: " + venue + "\nLocale: " + location + "\nDate: " + date;
-        console.log(output);
-        logData(output);
-
-      }).catch(function (err) {
+      function (response) { logConcerts(response) }
+      )
+      
+      .catch(function (err) {
       console.log(err);
     });
 };
+
+function logConcerts(response) {
+  const array = response.data;
+  for (let index = 0; index < array.length; index++) {
+  
+    var path = response.data[index];
+    var group = path.lineup;
+    var venue = path.venue.name;
+    var location = path.venue.city + ", " + path.venue.country;
+    // * Date of the Event (use moment to format this as "MM/DD/YYYY")
+    var date = moment(path.datetime).format("MM/DD/YYYY");
+    var output = "Artist: " + group + "\nVenue: " + venue + "\nLocale: " + location + "\nDate: " + date + "\n-----";
+    console.log(output);
+    logData(output);
+  }};
 
 // do-what-it-says
 function doWhatItSays() {
@@ -128,7 +135,7 @@ function spotifyThisSong(songTitle) {
 function logData(data) {
   fs.appendFile('log.txt', data + "\n", function (err) {
     if (err) throw err;
-    console.log('Saved!');
+    // console.log('Saved!');
   });
 }
 searchType(getSearchType(), getSearchTerm());
